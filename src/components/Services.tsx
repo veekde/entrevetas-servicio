@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
-import servicePergola from "@/assets/service-pergola.jpg";
+import servicePergola from "@/assets/service-pergola-new.png";
 import serviceDeck from "@/assets/service-deck.jpg";
 import serviceInterior from "@/assets/service-interior.jpg";
 

@@ -10,6 +10,7 @@ const languages: { code: Language; label: string; name: string }[] = [
   { code: "de", label: "DE", name: "Deutsch" },
   { code: "nl", label: "NL", name: "Nederlands" },
   { code: "fr", label: "FR", name: "Français" },
+  { code: "it", label: "IT", name: "Italiano" },
 ];
 
 const LanguageSwitcher = ({ variant = "default" }: { variant?: "default" | "sticky" }) => {

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
+import galleryPorton from "@/assets/gallery-porton.jpeg";
+import galleryCaseta from "@/assets/gallery-caseta.jpeg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import galleryPergola from "@/assets/gallery-pergola.jpg";
@@ -15,9 +17,14 @@ const Gallery = () => {
   const { t } = useLanguage();
 
   const projects: GalleryItem[] = [
-    { type: "image", src: gallery1, alt: "Celosía de listones de madera", labelKey: "gallery.1", altKey: "gallery.1.alt", span: "md:col-span-2 md:row-span-2" },
+    // Row 1-2: portón (grande) + altillo + taller video
+    { type: "image", src: galleryPorton, alt: "Portón verja de madera", labelKey: "gallery.7", altKey: "gallery.7.alt", span: "md:col-span-1 md:row-span-2" },
     { type: "image", src: gallery2, alt: "Altillo de madera maciza", labelKey: "gallery.2", altKey: "gallery.2.alt" },
+    { type: "image", src: galleryCaseta, alt: "Caseta de madera", labelKey: "gallery.8", altKey: "gallery.8.alt" },
+    // Row 2 cont: video + celosía
     { type: "video", src: video1, labelKey: "gallery.5", altKey: "gallery.5.alt" },
+    { type: "image", src: gallery1, alt: "Celosía de listones de madera", labelKey: "gallery.1", altKey: "gallery.1.alt" },
+    // Row 3: pérgola (ancha) + video proceso
     { type: "image", src: galleryPergola, alt: "Pérgola de madera exterior", labelKey: "gallery.4", altKey: "gallery.4.alt", span: "md:col-span-2" },
     { type: "video", src: video2, labelKey: "gallery.6", altKey: "gallery.6.alt" },
   ];

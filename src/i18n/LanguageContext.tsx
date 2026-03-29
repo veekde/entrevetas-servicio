@@ -13,7 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>(() => {
     const browserLang = navigator.language.slice(0, 2) as Language;
-    return ["es", "en", "de", "nl", "fr"].includes(browserLang) ? browserLang : "es";
+    return ["es", "en", "de", "nl", "fr", "it"].includes(browserLang) ? browserLang : "es";
   });
 
   const t = useCallback(
