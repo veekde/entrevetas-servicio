@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import galleryBg from "@/assets/gallery-bg.mp4";
 
-const WHATSAPP_NUMBER = "34611457391";
+const WHATSAPP_NUMBER = "34611432419";
 
 const Contact = () => {
   const { t } = useLanguage();

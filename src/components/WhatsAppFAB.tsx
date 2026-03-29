@@ -1,7 +1,7 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 
-const WHATSAPP_NUMBER = "34611457391";
+const WHATSAPP_NUMBER = "34611432419";
 
 const WhatsAppFAB = () => {
   const [visible, setVisible] = useState(false);
@@ -20,7 +20,7 @@ const WhatsAppFAB = () => {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={visible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8, pointerEvents: "none" as const }}
       transition={{ duration: 0.3 }}
-      className="fixed bottom-20 right-5 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+      className="fixed bottom-6 right-5 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
       aria-label="Chat on WhatsApp"
     >
       <svg viewBox="0 0 24 24" fill="white" className="w-7 h-7">
