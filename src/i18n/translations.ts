@@ -74,6 +74,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     "contact.title": "Hablemos de tu proyecto en madera.",
+    "contact.subtitle": "Cada proyecto comienza con una conversación. Contanos tu idea y diseñamos juntos la solución perfecta.",
     "contact.cta": "Escribir por WhatsApp",
 
     // Footer
@@ -139,6 +140,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.3.title": "Project design",
     "process.4.title": "Fabrication and installation",
     "contact.title": "Let's talk about your wood project.",
+    "contact.subtitle": "Every project starts with a conversation. Tell us your idea and we'll design the perfect solution together.",
     "contact.cta": "Write on WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "We work in Altea, Benidorm, Calpe, Polop, La Nucia, Albir and Alfaz Del Pi.",
@@ -202,6 +204,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.3.title": "Projektentwurf",
     "process.4.title": "Fertigung und Montage",
     "contact.title": "Sprechen wir über Ihr Holzprojekt.",
+    "contact.subtitle": "Jedes Projekt beginnt mit einem Gespräch. Erzählen Sie uns Ihre Idee und wir gestalten gemeinsam die perfekte Lösung.",
     "contact.cta": "Auf WhatsApp schreiben",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Wir arbeiten in Altea, Benidorm, Calpe, Polop, La Nucia, Albir und Alfaz Del Pi.",
@@ -265,6 +268,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.3.title": "Projectontwerp",
     "process.4.title": "Fabricage en installatie",
     "contact.title": "Laten we praten over uw houtproject.",
+    "contact.subtitle": "Elk project begint met een gesprek. Vertel ons uw idee en we ontwerpen samen de perfecte oplossing.",
     "contact.cta": "Schrijf op WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "We werken in Altea, Benidorm, Calpe, Polop, La Nucia, Albir en Alfaz Del Pi.",
@@ -328,6 +332,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.3.title": "Conception du projet",
     "process.4.title": "Fabrication et installation",
     "contact.title": "Parlons de votre projet en bois.",
+    "contact.subtitle": "Chaque projet commence par une conversation. Parlez-nous de votre idée et nous concevrons ensemble la solution parfaite.",
     "contact.cta": "Écrire sur WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Nous travaillons à Altea, Benidorm, Calpe, Polop, La Nucia, Albir et Alfaz Del Pi.",
@@ -391,6 +396,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.3.title": "Progettazione",
     "process.4.title": "Produzione e installazione",
     "contact.title": "Parliamo del tuo progetto in legno.",
+    "contact.subtitle": "Ogni progetto inizia con una conversazione. Raccontaci la tua idea e progettiamo insieme la soluzione perfetta.",
     "contact.cta": "Scrivici su WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Lavoriamo ad Altea, Benidorm, Calpe, Polop, La Nucia, Albir e Alfaz Del Pi.",
