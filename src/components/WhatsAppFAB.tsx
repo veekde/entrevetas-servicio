@@ -1,7 +1,7 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 
-const WHATSAPP_NUMBER = "34611432419";
+import { WHATSAPP_URL } from "@/constants/contact";
 
 const WhatsAppFAB = () => {
   const [visible, setVisible] = useState(false);
@@ -14,7 +14,7 @@ const WhatsAppFAB = () => {
 
   return (
     <motion.a
-      href={`https://wa.me/${WHATSAPP_NUMBER}`}
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}

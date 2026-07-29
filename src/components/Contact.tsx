@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import galleryBg from "@/assets/gallery-bg.mp4";
 
-const WHATSAPP_NUMBER = "34611432419";
+import { WHATSAPP_URL } from "@/constants/contact";
 
 const Contact = () => {
   const { t } = useLanguage();
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
+  const whatsappUrl = WHATSAPP_URL;
 
   return (
     <section id="contact" className="relative py-[70px] md:py-[100px] lg:py-[120px] px-6 md:px-10 overflow-hidden">

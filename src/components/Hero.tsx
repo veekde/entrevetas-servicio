@@ -6,8 +6,7 @@ import navLogoDark from "@/assets/ev-logo-dark.png";
 import navLogoWhite from "@/assets/ev-logo-white.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
-
-const WHATSAPP_NUMBER = "34611432419";
+import { WHATSAPP_URL } from "@/constants/contact";
 
 const navLinks = [
   { key: "nav.services", href: "#services" },
@@ -44,7 +43,7 @@ const Hero = () => {
     setScrolled(v > heroH - 100);
   });
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
+  const whatsappUrl = WHATSAPP_URL;
 
   return (
     <section
