@@ -78,7 +78,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     "contact.title": "Hablemos de tu proyecto en madera.",
-    "contact.subtitle": "Cuéntame tu idea, envíame algunas fotos del espacio y te doy una primera estimación de precio.",
+    "contact.subtitle": "Cuéntame tu idea y envíame fotos del espacio: te doy una primera estimación sin compromiso.",
     "contact.cta": "Escribir por WhatsApp",
 
     // Footer
@@ -148,7 +148,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.4.title": "Fabrication and installation",
     "process.4.desc": "I build every piece to measure and install it myself.",
     "contact.title": "Let's talk about your wood project.",
-    "contact.subtitle": "Every project starts with a conversation. Tell us your idea and we'll design the perfect solution together.",
+    "contact.subtitle": "Tell me your idea and send me photos of the space — I'll give you a first, no-obligation estimate.",
     "contact.cta": "Write on WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "We work in Altea, Benidorm, Calpe, Polop, La Nucia, Albir and Alfaz Del Pi.",
@@ -216,7 +216,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.4.title": "Fertigung und Montage",
     "process.4.desc": "Ich fertige jedes Teil maßgenau und montiere es selbst.",
     "contact.title": "Sprechen wir über Ihr Holzprojekt.",
-    "contact.subtitle": "Jedes Projekt beginnt mit einem Gespräch. Erzählen Sie uns Ihre Idee und wir gestalten gemeinsam die perfekte Lösung.",
+    "contact.subtitle": "Erzählen Sie mir Ihre Idee und schicken Sie mir Fotos des Raums – ich gebe Ihnen eine erste unverbindliche Einschätzung.",
     "contact.cta": "Auf WhatsApp schreiben",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Wir arbeiten in Altea, Benidorm, Calpe, Polop, La Nucia, Albir und Alfaz Del Pi.",
@@ -284,7 +284,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.4.title": "Fabricage en installatie",
     "process.4.desc": "Ik maak elk onderdeel op maat en installeer het zelf.",
     "contact.title": "Laten we praten over uw houtproject.",
-    "contact.subtitle": "Elk project begint met een gesprek. Vertel ons uw idee en we ontwerpen samen de perfecte oplossing.",
+    "contact.subtitle": "Vertel mij uw idee en stuur mij foto's van de ruimte – ik geef u een eerste vrijblijvende inschatting.",
     "contact.cta": "Schrijf op WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "We werken in Altea, Benidorm, Calpe, Polop, La Nucia, Albir en Alfaz Del Pi.",
@@ -352,7 +352,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.4.title": "Fabrication et installation",
     "process.4.desc": "Je fabrique chaque pièce sur mesure et l'installe moi-même.",
     "contact.title": "Parlons de votre projet en bois.",
-    "contact.subtitle": "Chaque projet commence par une conversation. Parlez-nous de votre idée et nous concevrons ensemble la solution parfaite.",
+    "contact.subtitle": "Racontez-moi votre idée et envoyez-moi des photos de l'espace : je vous donne une première estimation sans engagement.",
     "contact.cta": "Écrire sur WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Nous travaillons à Altea, Benidorm, Calpe, Polop, La Nucia, Albir et Alfaz Del Pi.",
@@ -420,7 +420,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "process.4.title": "Produzione e installazione",
     "process.4.desc": "Realizzo ogni pezzo su misura e lo installo personalmente.",
     "contact.title": "Parliamo del tuo progetto in legno.",
-    "contact.subtitle": "Ogni progetto inizia con una conversazione. Raccontaci la tua idea e progettiamo insieme la soluzione perfetta.",
+    "contact.subtitle": "Raccontami la tua idea e inviami delle foto dello spazio: ti do una prima stima senza impegno.",
     "contact.cta": "Scrivici su WhatsApp",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Lavoriamo ad Altea, Benidorm, Calpe, Polop, La Nucia, Albir e Alfaz Del Pi.",
