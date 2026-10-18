@@ -80,7 +80,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "contact.title": "Hablemos de tu proyecto en madera.",
     "contact.subtitle": "Cuéntame tu idea y envíame fotos del espacio: te doy una primera estimación sin compromiso.",
     "contact.cta": "Escríbeme por WhatsApp",
-    "contact.form.toggle": "O escribime por formulario",
+    "contact.form.toggle": "O escríbime por formulario",
     "contact.form.firstName": "Nombre",
     "contact.form.lastName": "Apellido",
     "contact.form.contact": "Email o teléfono",
