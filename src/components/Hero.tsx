@@ -3,10 +3,11 @@ import { motion, useScroll, useTransform, AnimatePresence, useMotionValueEvent }
 import { useRef, useState } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import navLogoDark from "@/assets/ev-logo-dark.png";
-import navLogoWhite from "@/assets/ev-logo-white.png";
+import navLogoWhite from "@/assets/ev-logo-white.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { WHATSAPP_URL } from "@/constants/contact";
+import { WHATSAPP_URL_HERO } from "@/constants/contact";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 const navLinks = [
   { key: "nav.services", href: "#services" },
@@ -43,7 +44,7 @@ const Hero = () => {
     setScrolled(v > heroH - 100);
   });
 
-  const whatsappUrl = WHATSAPP_URL;
+  const whatsappUrl = WHATSAPP_URL_HERO;
 
   return (
     <section
@@ -217,6 +218,7 @@ const Hero = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("hero")}
             className="inline-flex items-center gap-3 bg-[#3C6E47] hover:bg-[#345f3e] text-white px-6 h-[48px] rounded-full text-[15px] font-medium transition-colors duration-300"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">

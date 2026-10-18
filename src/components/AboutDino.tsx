@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
-import dinoImage from "@/assets/dino-portrait.jpg";
+import dinoImage from "@/assets/dino-portrait.webp";
 
 const AboutDino = () => {
   const { t } = useLanguage();

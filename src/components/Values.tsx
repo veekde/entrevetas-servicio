@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
-import iconRuler from "@/assets/icon-ruler.png";
-import iconToolbox from "@/assets/icon-toolbox.png";
-import iconSaw from "@/assets/icon-saw.png";
+import iconRuler from "@/assets/icon-ruler.webp";
+import iconToolbox from "@/assets/icon-toolbox.webp";
+import iconSaw from "@/assets/icon-saw.webp";
 
 const Values = () => {
   const { t } = useLanguage();
@@ -16,7 +16,7 @@ const Values = () => {
   return (
     <section id="values" className="py-[70px] md:py-[100px] lg:py-[120px] px-6 md:px-10">
       <div className="max-w-[1300px] mx-auto">
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -24,7 +24,7 @@ const Values = () => {
           className="text-[12px] tracking-[0.3em] uppercase text-muted-foreground mb-10 md:mb-12"
         >
           {t("values.label")}
-        </motion.p>
+        </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 md:gap-x-12 lg:gap-x-16 gap-y-14">
           {values.map((value, i) => (

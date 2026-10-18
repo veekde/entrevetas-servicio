@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import servicePergola from "@/assets/service-pergola-new.png";
 import serviceDeck from "@/assets/service-deck.jpg";
-import serviceInterior from "@/assets/service-interior.jpg";
+import serviceCladding from "@/assets/gallery-porton.webp";
 
 const Services = () => {
   const { t } = useLanguage();
@@ -10,7 +10,7 @@ const Services = () => {
   const services = [
     { image: servicePergola, titleKey: "services.1.title", descKey: "services.1.desc", altKey: "services.1.alt", objectPosition: "object-top" },
     { image: serviceDeck, titleKey: "services.2.title", descKey: "services.2.desc", altKey: "services.2.alt", objectPosition: "object-center" },
-    { image: serviceInterior, titleKey: "services.3.title", descKey: "services.3.desc", altKey: "services.3.alt", objectPosition: "object-center" },
+    { image: serviceCladding, titleKey: "services.3.title", descKey: "services.3.desc", altKey: "services.3.alt", objectPosition: "object-center" },
   ];
 
   return (

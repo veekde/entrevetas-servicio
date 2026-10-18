@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import galleryBg from "@/assets/gallery-bg.mp4";
 
-import { WHATSAPP_URL } from "@/constants/contact";
+import { WHATSAPP_URL_CONTACT } from "@/constants/contact";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 const Contact = () => {
   const { t } = useLanguage();
-  const whatsappUrl = WHATSAPP_URL;
+  const whatsappUrl = WHATSAPP_URL_CONTACT;
 
   return (
     <section id="contact" className="relative py-[70px] md:py-[100px] lg:py-[120px] px-6 md:px-10 overflow-hidden">
@@ -57,6 +58,7 @@ const Contact = () => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("contact")}
           className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 rounded-full text-sm font-medium tracking-widest uppercase transition-colors duration-300 shadow-[0_8px_30px_-8px_hsl(var(--accent)/0.4)]"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">

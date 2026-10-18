@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import fullLogo from "@/assets/ev-logo-dark.png";
+import { trackEmailClick, trackInstagramClick } from "@/lib/analytics";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -13,6 +14,7 @@ const Footer = () => {
           <span className="hidden md:inline text-border">·</span>
           <a
             href="mailto:Monteleonegabrieldino@gmail.com"
+            onClick={trackEmailClick}
             className="hover:text-foreground transition-colors duration-300"
           >
             Monteleonegabrieldino@gmail.com
@@ -22,6 +24,7 @@ const Footer = () => {
             href="https://www.instagram.com/entrevetas.servicios/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackInstagramClick}
             className="inline-flex items-center gap-2 hover:text-foreground transition-colors duration-300"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">

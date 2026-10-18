@@ -1,7 +1,8 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 
-import { WHATSAPP_URL } from "@/constants/contact";
+import { WHATSAPP_URL_FAB } from "@/constants/contact";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 const WhatsAppFAB = () => {
   const [visible, setVisible] = useState(false);
@@ -14,9 +15,10 @@ const WhatsAppFAB = () => {
 
   return (
     <motion.a
-      href={WHATSAPP_URL}
+      href={WHATSAPP_URL_FAB}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackWhatsAppClick("fab")}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={visible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8, pointerEvents: "none" as const }}
       transition={{ duration: 0.3 }}
