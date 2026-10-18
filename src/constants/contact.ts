@@ -15,3 +15,8 @@ export const WHATSAPP_URL_CONTACT = waWithText(
 export const WHATSAPP_URL_FAB = waWithText(
   "Hola Dino, me gustaría pedir información."
 );
+
+// Formulario de contacto — PENDIENTE: reemplazar por el endpoint real de Formspree
+// (se consigue gratis en formspree.io, creando un formulario que apunte al mail de Dino).
+// Hasta entonces el formulario no va a enviar nada real.
+export const CONTACT_FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX";

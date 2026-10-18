@@ -4,6 +4,7 @@ import galleryBg from "@/assets/gallery-bg.mp4";
 
 import { WHATSAPP_URL_CONTACT } from "@/constants/contact";
 import { trackWhatsAppClick } from "@/lib/analytics";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -66,6 +67,8 @@ const Contact = () => {
           </svg>
           {t("contact.cta")}
         </motion.a>
+
+        <ContactForm />
       </div>
     </section>
   );
