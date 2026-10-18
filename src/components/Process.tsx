@@ -5,10 +5,10 @@ const Process = () => {
   const { t } = useLanguage();
 
   const steps = [
-    { number: "01", title: t("process.1.title") },
-    { number: "02", title: t("process.2.title") },
-    { number: "03", title: t("process.3.title") },
-    { number: "04", title: t("process.4.title") },
+    { number: "01", title: t("process.1.title"), desc: t("process.1.desc") },
+    { number: "02", title: t("process.2.title"), desc: t("process.2.desc") },
+    { number: "03", title: t("process.3.title"), desc: t("process.3.desc") },
+    { number: "04", title: t("process.4.title"), desc: t("process.4.desc") },
   ];
 
   return (
@@ -32,15 +32,20 @@ const Process = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="border-t border-border last:border-b py-5 md:py-6 px-2 md:px-4 flex items-center gap-6 md:gap-10"
+              className="border-t border-border last:border-b py-5 md:py-6 px-2 md:px-4 flex items-start gap-6 md:gap-10"
             >
-              <span className="text-xs tracking-[0.2em] text-muted-foreground/50 font-light w-8 shrink-0">
+              <span className="text-xs tracking-[0.2em] text-muted-foreground/50 font-light w-8 shrink-0 pt-1">
                 {step.number}
               </span>
-              <div className="w-1 h-1 rounded-full bg-accent/40 shrink-0" />
-              <h3 className="text-[20px] md:text-[24px] tracking-tight text-foreground/80">
-                {step.title}
-              </h3>
+              <div className="w-1 h-1 rounded-full bg-accent/40 shrink-0 mt-3" />
+              <div>
+                <h3 className="text-[20px] md:text-[24px] tracking-tight text-foreground/80">
+                  {step.title}
+                </h3>
+                <p className="text-[14px] md:text-[15px] text-muted-foreground font-light mt-1">
+                  {step.desc}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
