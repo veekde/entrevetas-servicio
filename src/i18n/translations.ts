@@ -9,7 +9,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "nav.contact": "Contacto",
 
     // Hero
-    "hero.title": "Carpintería a medida en Altea: pérgolas, tarimas y madera hecha para durar",
+    "hero.title": "Carpintería a medida: pérgolas, tarimas y madera hecha para durar",
     "hero.subtitle": "Diseño, fabrico e instalo cada pieza yo mismo. Madera elegida para el sol y el salitre del Mediterráneo.",
     "hero.whatsapp": "Pedir presupuesto por WhatsApp",
     "hero.services": "Ver trabajos",
