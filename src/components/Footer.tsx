@@ -13,11 +13,11 @@ const Footer = () => {
           <span>{t("footer.zone")}</span>
           <span className="hidden md:inline text-border">·</span>
           <a
-            href="mailto:Monteleonegabrieldino@gmail.com"
+            href="mailto:monteleonegabrieldino@gmail.com"
             onClick={trackEmailClick}
             className="hover:text-foreground transition-colors duration-300"
           >
-            Monteleonegabrieldino@gmail.com
+            monteleonegabrieldino@gmail.com
           </a>
           <span className="hidden md:inline text-border">·</span>
           <a
