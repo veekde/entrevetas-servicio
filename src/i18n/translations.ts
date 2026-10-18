@@ -78,7 +78,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     "contact.title": "Hablemos de tu proyecto en madera.",
-    "contact.subtitle": "Cuéntame tu idea, envíame un par de fotos del espacio y te doy una primera idea de precio.",
+    "contact.subtitle": "Cuéntame tu idea, envíame algunas fotos del espacio y te doy una primera estimación de precio.",
     "contact.cta": "Escribir por WhatsApp",
 
     // Footer
