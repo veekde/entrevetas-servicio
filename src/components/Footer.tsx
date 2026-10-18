@@ -56,6 +56,19 @@ const Footer = () => {
           © {new Date().getFullYear()} Entre Vetas
         </p>
       </div>
+      <div className="max-w-[1300px] mx-auto mt-6 pt-6 border-t border-border/50 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-muted-foreground/70">
+        <a href="/aviso-legal" className="hover:text-foreground transition-colors duration-300">
+          {t("footer.legal.aviso")}
+        </a>
+        <span className="text-border">·</span>
+        <a href="/politica-de-privacidad" className="hover:text-foreground transition-colors duration-300">
+          {t("footer.legal.privacidad")}
+        </a>
+        <span className="text-border">·</span>
+        <a href="/politica-de-cookies" className="hover:text-foreground transition-colors duration-300">
+          {t("footer.legal.cookies")}
+        </a>
+      </div>
     </footer>
   );
 };

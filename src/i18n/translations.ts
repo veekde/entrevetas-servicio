@@ -93,6 +93,9 @@ export const translations: Record<Language, Record<string, string>> = {
     // Footer
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Trabajo en Altea, Benidorm, Calpe, Polop, La Nucia, Albir y Alfaz Del Pi.",
+    "footer.legal.aviso": "Aviso Legal",
+    "footer.legal.privacidad": "Política de Privacidad",
+    "footer.legal.cookies": "Política de Cookies",
   },
   en: {
     "nav.gallery": "Work",
@@ -170,6 +173,9 @@ export const translations: Record<Language, Record<string, string>> = {
     "contact.form.error": "Something went wrong. Try again or message me on WhatsApp.",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "We work in Altea, Benidorm, Calpe, Polop, La Nucia, Albir and Alfaz Del Pi.",
+    "footer.legal.aviso": "Legal Notice",
+    "footer.legal.privacidad": "Privacy Policy",
+    "footer.legal.cookies": "Cookie Policy",
   },
   de: {
     "nav.gallery": "Arbeiten",
@@ -247,6 +253,9 @@ export const translations: Record<Language, Record<string, string>> = {
     "contact.form.error": "Etwas ist schiefgelaufen. Versuchen Sie es erneut oder schreiben Sie mir auf WhatsApp.",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Wir arbeiten in Altea, Benidorm, Calpe, Polop, La Nucia, Albir und Alfaz Del Pi.",
+    "footer.legal.aviso": "Impressum",
+    "footer.legal.privacidad": "Datenschutzrichtlinie",
+    "footer.legal.cookies": "Cookie-Richtlinie",
   },
   nl: {
     "nav.gallery": "Werk",
@@ -324,6 +333,9 @@ export const translations: Record<Language, Record<string, string>> = {
     "contact.form.error": "Er ging iets mis. Probeer het opnieuw of stuur mij een bericht via WhatsApp.",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "We werken in Altea, Benidorm, Calpe, Polop, La Nucia, Albir en Alfaz Del Pi.",
+    "footer.legal.aviso": "Juridische Mededeling",
+    "footer.legal.privacidad": "Privacybeleid",
+    "footer.legal.cookies": "Cookiebeleid",
   },
   fr: {
     "nav.gallery": "Travaux",
@@ -401,6 +413,9 @@ export const translations: Record<Language, Record<string, string>> = {
     "contact.form.error": "Un problème est survenu. Réessayez ou écrivez-moi sur WhatsApp.",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Nous travaillons à Altea, Benidorm, Calpe, Polop, La Nucia, Albir et Alfaz Del Pi.",
+    "footer.legal.aviso": "Mentions Légales",
+    "footer.legal.privacidad": "Politique de Confidentialité",
+    "footer.legal.cookies": "Politique de Cookies",
   },
   it: {
     "nav.gallery": "Lavori",
@@ -478,5 +493,8 @@ export const translations: Record<Language, Record<string, string>> = {
     "contact.form.error": "Si è verificato un problema. Riprova o scrivimi su WhatsApp.",
     "footer.location": "Altea, Benidorm, Calpe, Polop, La Nucia, Albir, Alfaz Del Pi",
     "footer.zone": "Lavoriamo ad Altea, Benidorm, Calpe, Polop, La Nucia, Albir e Alfaz Del Pi.",
+    "footer.legal.aviso": "Note Legali",
+    "footer.legal.privacidad": "Politica sulla Privacy",
+    "footer.legal.cookies": "Politica sui Cookie",
   },
 };
