@@ -112,7 +112,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "nav.process": "Process",
     "nav.about": "About Me",
     "nav.contact": "Contact",
-    "hero.title": "Custom carpentry and home care in Altea",
+    "hero.title": "Custom carpentry and property care in Altea",
     "hero.subtitle": "Design, fabrication and installation of wood projects for indoor and outdoor spaces.",
     "hero.whatsapp": "Chat on WhatsApp",
     "hero.services": "View work",
