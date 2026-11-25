@@ -8,7 +8,6 @@ import gallery1 from "@/assets/gallery-1.webp";
 import gallery2 from "@/assets/gallery-2.webp";
 import galleryPergola from "@/assets/gallery-pergola.webp";
 import galleryDeckPergola from "@/assets/gallery-deck-pergola.webp";
-import galleryEscaleraObra from "@/assets/gallery-escalera-obra.webp";
 import galleryEscaleraDespues from "@/assets/gallery-escalera-despues.webp";
 import galleryDeckComposite from "@/assets/gallery-deck-composite.webp";
 import video1 from "@/assets/video-1.mp4";
@@ -84,13 +83,12 @@ const Gallery = () => {
     // Rows 3-4: portón (grande, horizontal) + proceso (alta)
     { type: "image", src: galleryPortonWide, alt: "Portón verja de madera", labelKey: "gallery.7", altKey: "gallery.7.alt", span: "md:col-span-2 md:row-span-2" },
     { type: "image", src: galleryProceso, alt: "Proceso de instalación", labelKey: "gallery.6", altKey: "gallery.6.alt", span: "md:col-span-1 md:row-span-2" },
-    // Rows 5-6: tarima y pérgola (alta) + slider escalera en obra / después + tarima composite
+    // Rows 5-6: tarima y pérgola (alta) + slider tarima de composite (escalera + tarima)
     { type: "image", src: galleryDeckPergola, alt: "Tarima y pérgola", labelKey: "gallery.9", altKey: "gallery.9.alt", span: "md:col-span-1 md:row-span-2" },
     {
       type: "slider",
       span: "row-span-2 md:col-span-2 md:row-span-2",
       slides: [
-        { src: galleryEscaleraObra, labelKey: "gallery.11", altKey: "gallery.11.alt" },
         { src: galleryEscaleraDespues, labelKey: "gallery.12", altKey: "gallery.12.alt" },
         { src: galleryDeckComposite, labelKey: "gallery.13", altKey: "gallery.13.alt" },
       ],
