@@ -4,7 +4,6 @@ import { useRef, useState, useEffect } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import heroMobile from "@/assets/hero-mobile.webp";
 import navLogoDark from "@/assets/ev-logo-horizontal.webp";
-import navLogoWhite from "@/assets/ev-emblem.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { WHATSAPP_URL_HERO } from "@/constants/contact";
@@ -52,8 +51,7 @@ const Hero = () => {
 
   const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (v) => {
-    const heroH = sectionRef.current?.offsetHeight ?? 800;
-    setScrolled(v > heroH - 100);
+    setScrolled(v > 10);
   });
 
   const whatsappUrl = WHATSAPP_URL_HERO;
@@ -61,9 +59,9 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[100dvh] flex items-center overflow-hidden p-4 md:p-6"
+      className="relative min-h-[100dvh] flex items-center overflow-hidden px-4 pb-4 pt-[76px] md:px-6 md:pb-6 md:pt-[92px]"
     >
-      <motion.div className="absolute inset-4 md:inset-6 rounded-2xl md:rounded-3xl overflow-hidden" style={{ y: imageY, scale: imageScale }}>
+      <motion.div className="absolute inset-x-4 bottom-4 top-[76px] md:inset-x-6 md:bottom-6 md:top-[92px] rounded-2xl md:rounded-3xl overflow-hidden" style={{ y: imageY, scale: imageScale }}>
         {isDesktop ? (
           <video
             src={heroVideo}
@@ -87,26 +85,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
       </motion.div>
 
-      {/* Hero-only Nav (transparent, visible in hero) */}
-      <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 md:px-16 py-6 md:py-8">
-        <img src={navLogoWhite} alt="Entre Vetas" className="w-[56px] md:w-[72px] h-auto drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]" />
-        <div className="flex items-center gap-6 md:gap-8">
-          {navLinks.map((link) => (
-            <a key={link.key} href={link.href} onClick={(e) => smoothScroll(e, link.href)}
-              className="hidden min-[900px]:inline text-[12px] tracking-widest uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300"
-            >{t(link.key)}</a>
-          ))}
-          <LanguageSwitcher />
-          <button onClick={() => setMenuOpen(true)} className="min-[900px]:hidden flex flex-col justify-center items-center gap-[5px] p-1" aria-label="Open menu">
-            <span className="block w-[24px] h-[2px] bg-primary-foreground rounded-sm" />
-            <span className="block w-[24px] h-[2px] bg-primary-foreground rounded-sm" />
-            <span className="block w-[24px] h-[2px] bg-primary-foreground rounded-sm" />
-          </button>
-        </div>
-      </nav>
-
-      {/* Sticky Nav */}
-      <nav className={`fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-3 transition-all duration-700 ease-out bg-white shadow-sm ${scrolled ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}>
+      {/* Header (always visible, white) */}
+      <nav className={`fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-3 transition-shadow duration-500 bg-white ${scrolled ? "shadow-sm" : "shadow-none"}`}>
         <motion.img
           src={navLogoDark}
           alt="Entre Vetas"
