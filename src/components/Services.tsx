@@ -3,7 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import servicePergola from "@/assets/service-pergola-new.png";
 import serviceDeck from "@/assets/service-deck.jpg";
 import serviceCladding from "@/assets/gallery-porton.webp";
-import serviceHomeCare from "@/assets/service-cuidado-integral.webp";
+import serviceHomeCare from "@/assets/gallery-2.webp";
 
 const Services = () => {
   const { t } = useLanguage();
