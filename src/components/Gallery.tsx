@@ -5,6 +5,11 @@ import galleryCaseta from "@/assets/gallery-caseta.webp";
 import gallery1 from "@/assets/gallery-1.webp";
 import gallery2 from "@/assets/gallery-2.webp";
 import galleryPergola from "@/assets/gallery-pergola.webp";
+import galleryDeckPergola from "@/assets/gallery-deck-pergola.webp";
+import galleryEscaleraAntes from "@/assets/gallery-escalera-antes.webp";
+import galleryEscaleraObra from "@/assets/gallery-escalera-obra.webp";
+import galleryEscaleraDespues from "@/assets/gallery-escalera-despues.webp";
+import galleryDeckComposite from "@/assets/gallery-deck-composite.webp";
 import video1 from "@/assets/video-1.mp4";
 import video2 from "@/assets/video-2.mp4";
 import galleryBg from "@/assets/gallery-bg.mp4";
@@ -27,6 +32,12 @@ const Gallery = () => {
     // Row 3: pérgola (ancha) + video proceso
     { type: "image", src: galleryPergola, alt: "Pérgola de madera exterior", labelKey: "gallery.4", altKey: "gallery.4.alt", span: "md:col-span-2" },
     { type: "video", src: video2, labelKey: "gallery.6", altKey: "gallery.6.alt" },
+    // Row 4-5: tarima y pérgola (alta) + escalera antes / en obra / después + tarima composite
+    { type: "image", src: galleryDeckPergola, alt: "Tarima y pérgola", labelKey: "gallery.9", altKey: "gallery.9.alt", span: "md:col-span-1 md:row-span-2" },
+    { type: "image", src: galleryEscaleraAntes, alt: "Escalera antes", labelKey: "gallery.10", altKey: "gallery.10.alt" },
+    { type: "image", src: galleryEscaleraObra, alt: "Escalera en obra", labelKey: "gallery.11", altKey: "gallery.11.alt" },
+    { type: "image", src: galleryEscaleraDespues, alt: "Escalera después", labelKey: "gallery.12", altKey: "gallery.12.alt" },
+    { type: "image", src: galleryDeckComposite, alt: "Tarima de composite", labelKey: "gallery.13", altKey: "gallery.13.alt" },
   ];
 
   return (
