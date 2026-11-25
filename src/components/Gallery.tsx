@@ -13,7 +13,7 @@ import galleryEscaleraObra from "@/assets/gallery-escalera-obra.webp";
 import galleryEscaleraDespues from "@/assets/gallery-escalera-despues.webp";
 import galleryDeckComposite from "@/assets/gallery-deck-composite.webp";
 import video1 from "@/assets/video-1.mp4";
-import video2 from "@/assets/video-2.mp4";
+import galleryProceso from "@/assets/gallery-proceso.webp";
 import galleryBg from "@/assets/gallery-bg.mp4";
 
 type GalleryItem =
@@ -83,9 +83,9 @@ const Gallery = () => {
     // Row 2 cont: video + celosía
     { type: "video", src: video1, labelKey: "gallery.5", altKey: "gallery.5.alt" },
     { type: "image", src: gallery1, alt: "Celosía de listones de madera", labelKey: "gallery.1", altKey: "gallery.1.alt" },
-    // Row 3: pérgola (ancha) + video proceso
+    // Row 3: pérgola (ancha) + foto proceso
     { type: "image", src: galleryPergola, alt: "Pérgola de madera exterior", labelKey: "gallery.4", altKey: "gallery.4.alt", span: "md:col-span-2" },
-    { type: "video", src: video2, labelKey: "gallery.6", altKey: "gallery.6.alt" },
+    { type: "image", src: galleryProceso, alt: "Proceso de instalación", labelKey: "gallery.6", altKey: "gallery.6.alt" },
     // Row 4-5: tarima y pérgola (alta) + slider escalera antes / en obra / después + tarima composite
     { type: "image", src: galleryDeckPergola, alt: "Tarima y pérgola", labelKey: "gallery.9", altKey: "gallery.9.alt", span: "md:col-span-1 md:row-span-2" },
     {
@@ -146,7 +146,7 @@ const Gallery = () => {
                 <video
                   src={project.src}
                   muted
-                  loop={project.src !== video2}
+                  loop
                   playsInline
                   autoPlay
                   ref={(el) => { if (el) el.playbackRate = 1; }}
