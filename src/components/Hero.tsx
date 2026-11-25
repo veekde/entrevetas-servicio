@@ -3,8 +3,8 @@ import { motion, useScroll, useTransform, AnimatePresence, useMotionValueEvent }
 import { useRef, useState, useEffect } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import heroMobile from "@/assets/hero-mobile.webp";
-import navLogoDark from "@/assets/ev-logo-dark.png";
-import navLogoWhite from "@/assets/ev-logo-white.webp";
+import navLogoDark from "@/assets/ev-logo-horizontal.webp";
+import navLogoWhite from "@/assets/ev-emblem.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { WHATSAPP_URL_HERO } from "@/constants/contact";
@@ -89,7 +89,7 @@ const Hero = () => {
 
       {/* Hero-only Nav (transparent, visible in hero) */}
       <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 md:px-16 py-6 md:py-8">
-        <img src={navLogoWhite} alt="Entre Vetas" className="w-[60px] md:w-[80px] h-auto drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]" />
+        <img src={navLogoWhite} alt="Entre Vetas" className="w-[56px] md:w-[72px] h-auto drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]" />
         <div className="flex items-center gap-6 md:gap-8">
           {navLinks.map((link) => (
             <a key={link.key} href={link.href} onClick={(e) => smoothScroll(e, link.href)}
@@ -113,7 +113,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="h-[30px] md:h-[38px] w-auto"
+          className="h-[36px] md:h-[44px] w-auto"
         />
         <motion.div
           initial={{ opacity: 0, x: 20 }}

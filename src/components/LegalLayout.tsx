@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import fullLogo from "@/assets/ev-logo-dark.png";
+import fullLogo from "@/assets/ev-logo-horizontal.webp";
 
 const LegalLayout = ({ title, updated, children }: { title: string; updated: string; children: ReactNode }) => {
   return (
@@ -7,7 +7,7 @@ const LegalLayout = ({ title, updated, children }: { title: string; updated: str
       <header className="px-6 md:px-10 py-6 border-b border-border">
         <div className="max-w-[800px] mx-auto flex items-center justify-between">
           <a href="/">
-            <img src={fullLogo} alt="Entre Vetas" className="h-[32px] w-auto" />
+            <img src={fullLogo} alt="Entre Vetas" className="h-[40px] w-auto" />
           </a>
           <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
             ← Volver al sitio
