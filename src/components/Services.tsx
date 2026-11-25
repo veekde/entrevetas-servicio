@@ -3,6 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import servicePergola from "@/assets/service-pergola-new.png";
 import serviceDeck from "@/assets/service-deck.jpg";
 import serviceCladding from "@/assets/gallery-porton.webp";
+import serviceHomeCare from "@/assets/service-cuidado-integral.webp";
 
 const Services = () => {
   const { t } = useLanguage();
@@ -11,6 +12,7 @@ const Services = () => {
     { image: servicePergola, titleKey: "services.1.title", descKey: "services.1.desc", altKey: "services.1.alt", objectPosition: "object-top" },
     { image: serviceDeck, titleKey: "services.2.title", descKey: "services.2.desc", altKey: "services.2.alt", objectPosition: "object-center" },
     { image: serviceCladding, titleKey: "services.3.title", descKey: "services.3.desc", altKey: "services.3.alt", objectPosition: "object-center" },
+    { image: serviceHomeCare, titleKey: "services.4.title", descKey: "services.4.desc", altKey: "services.4.alt", objectPosition: "object-center", beforeAfter: true },
   ];
 
   return (
@@ -26,7 +28,7 @@ const Services = () => {
           {t("services.label")}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8 lg:gap-6 xl:gap-8">
           {services.map((service, i) => (
             <motion.div
               key={i}
@@ -42,6 +44,12 @@ const Services = () => {
                 loading="lazy"
                 className={`absolute inset-0 w-full h-full object-cover ${service.objectPosition} transition-transform duration-[1.2s] ease-out group-hover:scale-110`}
               />
+              {service.beforeAfter && (
+                <div className="absolute top-4 inset-x-4 flex justify-between pointer-events-none">
+                  <span className="px-2.5 py-1 rounded-full bg-foreground/55 backdrop-blur-sm text-primary-foreground text-[11px] tracking-widest uppercase">{t("services.4.before")}</span>
+                  <span className="px-2.5 py-1 rounded-full bg-foreground/55 backdrop-blur-sm text-primary-foreground text-[11px] tracking-widest uppercase">{t("services.4.after")}</span>
+                </div>
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent group-hover:from-foreground/90 group-hover:via-foreground/30 transition-all duration-700" />
               <div className="absolute inset-x-0 bottom-0 h-1/2 backdrop-blur-[6px] [mask-image:linear-gradient(to_top,black_30%,transparent)]" />
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-7">
